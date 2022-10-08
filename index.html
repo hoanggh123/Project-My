@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextGen</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamses"
-        rel="stylesheet">
+
     <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.0.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/1147679ae7.js"></script>
+    <script src="a.js"></script>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
             </div>
             <div class="nav-contact">
                 <div class="contact-advise">
-                    <p class="advise">Get A Quote</p>
+                    <p class="advise" onclick="on()">Get A Quote</p>
                 </div>
                 <div class="contact-phone">
                     <div class="phone-icon">
@@ -69,12 +69,53 @@
                     <p class="contact-day">| Mon - Fri (8 AM - 5 PM) AWST</p>
                 </div>
             </div>
-            <div class="container-wonder">
+            <div class="form-auth" id="form">
+                <div class="auth-header">
+                    <h3 class="header-heading">OBLIGATION-FREE QUOTES</h3>
+                    <button class="header-btn"> <i class="fa-solid fa-xmark auth-icons" onclick="off()"></i></button>
+                </div>
+                <p class="header-item">Please enter your information.</p>
+                <div class="auth-container">
+                    <div class="container-form">
+                        <span class="form-name">Full Name</span>
+                        <div class="form-input">
+                            <input type="text" class="input-name" placeholder="Full Name">
+                            <i class="fa-regular fa-user user-icons"></i>
+                        </div>
+                    </div>
+                    <div class="container-form">
+                        <span class="form-name">Email address</span>
+                        <div class="form-input">
+                            <input type="text" class="input-email" placeholder="johndoe@gmail.com">
+                            <i class="fa-regular fa-envelope email-icons"></i>
+                        </div>
+                    </div>
+                    <div class="container-form">
+                        <span class="form-name">Phone number</span>
+                        <div class="form-input">
+                            <input type="text" class="input-name" placeholder="+1 000 000 00">
+                            <i class="fa-solid fa-phone user-icons"></i>
+                        </div>
+                    </div>
+                    <div class="footer-form">
+                        <button class="footer-btn">SUBMIT NOW</button>
+                        <div class="footer-option">
+                            <div class="option-dash"></div>
+                            <p class="option-item">Or</p>
+                            <div class="option-dash"></div>
 
+                        </div>
+                        <button class="btn-phone">
+                            
+                                <div class="option-item">Call</div>
+                                <p class="option-dot"></p>
+                                <div class="option-phone">0421 872 557</div>
+                          
+                        </button>
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </div>
     <div class="container">
 
